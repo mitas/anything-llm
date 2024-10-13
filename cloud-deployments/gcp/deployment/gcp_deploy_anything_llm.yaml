@@ -2,8 +2,8 @@ resources:
   - name: anything-llm-instance  
     type: compute.v1.instance  
     properties:  
-      zone: us-central1-a  
-      machineType: zones/us-central1-a/machineTypes/n1-standard-1  
+      zone: europe-central2-a  
+      machineType: zones/europe-central2-a/machineTypes/n1-standard-1  
       disks:  
         - deviceName: boot  
           type: PERSISTENT  
@@ -20,7 +20,7 @@ resources:
       metadata:  
         items:  
           - key: startup-script  
-            value: |  
+            value: |
               #!/bin/bash  
               # check output of userdata script with sudo tail -f /var/log/cloud-init-output.log  
 
